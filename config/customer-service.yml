@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: customer-service
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      customerService:
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        slidingWindowSize: 10
+
+custom:
+  message: "Customer Service - Config Padrão"
