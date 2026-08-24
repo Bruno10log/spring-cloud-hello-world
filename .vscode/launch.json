@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CustomerApplication<customer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bruno10log.customer.CustomerApplication",
+            "projectName": "customer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DiscoveryApplication<discovery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bruno10log.discovery.DiscoveryApplication",
+            "projectName": "discovery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GatewayApplication<gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bruno10log.gateway.GatewayApplication",
+            "projectName": "gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderApplication<order>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bruno10log.order.OrderApplication",
+            "projectName": "order",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
