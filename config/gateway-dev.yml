@@ -62,6 +62,8 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
     urls:
+      - name: Gateway
+        url: /v3/api-docs
       - name: Customer Service
         url: /customer-service/v3/api-docs
       - name: Order Service

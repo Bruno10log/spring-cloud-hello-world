@@ -1,0 +1,22 @@
+# Maven build output
+**/target/
+
+# Local run and build logs
+.run-logs/
+.build.log
+
+# Local Config Server checkout
+.config-server-git/
+
+# IDE and local environment files
+.idea/
+.mcp.json
+.claude/
+.bash_profile
+.bashrc
+.gitconfig
+.gitmodules
+.profile
+.ripgreprc
+.zprofile
+.zshrc
