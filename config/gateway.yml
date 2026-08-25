@@ -10,6 +10,35 @@ spring:
             server:
                 webmvc:
                     routes:
+                        # Documentacao OpenAPI dos servicos
+                        - id: customer-service-swagger
+                          uri: lb://customer-service
+                          predicates:
+                            - Path=/customer-service/v3/api-docs
+                          filters:
+                            - RewritePath=/customer-service/(?<segment>.*), /$\{segment}
+                            
+                        - id: order-service-swagger
+                          uri: lb://order-service
+                          predicates:
+                            - Path=/order-service/v3/api-docs
+                          filters:
+                            - RewritePath=/order-service/(?<segment>.*), /$\{segment}
+
+                        - id: customer-service-swagger-ui
+                          uri: lb://customer-service
+                          predicates:
+                            - Path=/customer-service/swagger-ui/**
+                          filters:
+                            - RewritePath=/customer-service/(?<segment>.*), /$\{segment}
+
+                        - id: order-service-swagger-ui
+                          uri: lb://order-service
+                          predicates:
+                            - Path=/order-service/swagger-ui/**
+                          filters:
+                            - RewritePath=/order-service/(?<segment>.*), /$\{segment}
+                            
                         - id: customer-service
                           uri: lb://customer-service
                           predicates:
@@ -29,3 +58,12 @@ spring:
                               args:
                                 id: orderServiceCB
                                 fallbackUri: forward:/fallback/order-service
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: Customer Service
+        url: /customer-service/v3/api-docs
+      - name: Order Service
+        url: /order-service/v3/api-docs

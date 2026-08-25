@@ -15,3 +15,14 @@ resilience4j:
 
 custom:
   message: "Customer Service - Config Padrão"
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+    display-request-duration: true
+    doc-expansion: none
+  
+  api-docs:
+    path: /v3/api-docs

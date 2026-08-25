@@ -4,6 +4,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +22,21 @@ public class CustomerController {
     private OrderClient orderClient;
 
     @GetMapping("/{id}")
+    @Operation(summary = "Get user by ID", description = "Returns a user by their ID")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "User found"),
+        @ApiResponse(responseCode = "404", description = "User not found")
+    })
     public Customer getUser(@PathVariable Long id) {
         return new Customer(id, "Bruno", "bruno@mail.com");
     }
 
     @GetMapping("/{id}/orders")
+    @Operation(summary = "Get customer orders", description = "Returns the orders for a specific customer")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Orders found"),
+        @ApiResponse(responseCode = "404", description = "Customer not found")
+    })
     public CustomerAndOrders getCustomerOrders(@PathVariable Long id) {
         var customer = new Customer(id, "Bruno", "bruno@mail.com");
 
