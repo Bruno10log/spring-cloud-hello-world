@@ -1,0 +1,98 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-08-25T02:01:14.946+01:00  INFO 149477 --- [  restartedMain] c.b.discovery.DiscoveryApplication       : Starting DiscoveryApplication using Java 25.0.4 with PID 149477 (/home/bruno/workspace/cloud-hello-world/discovery/target/classes started by bruno in /home/bruno/workspace/cloud-hello-world/discovery)
+2026-08-25T02:01:14.949+01:00  INFO 149477 --- [  restartedMain] c.b.discovery.DiscoveryApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-08-25T02:01:14.992+01:00  INFO 149477 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-25T02:01:14.992+01:00  INFO 149477 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-25T02:01:15.803+01:00  INFO 149477 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c278b2a6-4748-3a57-801e-e99f752c8f74
+2026-08-25T02:01:16.103+01:00  INFO 149477 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-08-25T02:01:16.114+01:00  INFO 149477 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-25T02:01:16.115+01:00  INFO 149477 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-25T02:01:16.140+01:00  INFO 149477 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1146 ms
+2026-08-25T02:01:16.735+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-08-25T02:01:16.735+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/home/bruno/.m2/repository/com/thoughtworks/xstream/xstream/1.4.21/xstream-1.4.21.jar)
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+2026-08-25T02:01:16.893+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-08-25T02:01:16.893+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-08-25T02:01:17.030+01:00  INFO 149477 --- [  restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-08-25T02:01:17.481+01:00  WARN 149477 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-25T02:01:17.497+01:00  INFO 149477 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-25T02:01:17.508+01:00  INFO 149477 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-25T02:01:17.509+01:00  INFO 149477 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-08-25T02:01:17.510+01:00  INFO 149477 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1787619677510 with initial instances count: 0
+2026-08-25T02:01:17.535+01:00  INFO 149477 --- [  restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-08-25T02:01:17.537+01:00  INFO 149477 --- [  restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-08-25T02:01:17.608+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-08-25T02:01:17.608+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-08-25T02:01:17.608+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-08-25T02:01:17.608+01:00  INFO 149477 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-08-25T02:01:17.630+01:00  INFO 149477 --- [  restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-08-25T02:01:17.635+01:00  INFO 149477 --- [  restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-08-25T02:01:17.635+01:00  INFO 149477 --- [  restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-08-25T02:01:17.644+01:00  INFO 149477 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-08-25T02:01:17.682+01:00  INFO 149477 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2026-08-25T02:01:17.696+01:00  INFO 149477 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2026-08-25T02:01:17.696+01:00  INFO 149477 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-08-25T02:01:17.697+01:00  INFO 149477 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-08-25T02:01:17.697+01:00  INFO 149477 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-08-25T02:01:17.697+01:00  INFO 149477 --- [      Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-08-25T02:01:17.697+01:00  INFO 149477 --- [      Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-08-25T02:01:17.698+01:00  INFO 149477 --- [      Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-08-25T02:01:17.701+01:00  INFO 149477 --- [      Thread-13] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-08-25T02:01:17.713+01:00  INFO 149477 --- [  restartedMain] c.b.discovery.DiscoveryApplication       : Started DiscoveryApplication in 3.094 seconds (process running for 3.557)
+2026-08-25T02:01:25.276+01:00  INFO 149477 --- [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-25T02:01:25.277+01:00  INFO 149477 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-25T02:01:25.278+01:00  INFO 149477 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-08-25T02:01:25.554+01:00  INFO 149477 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/thinkpad.home:config-server:8888 with status UP (replication=false)
+2026-08-25T02:01:26.272+01:00  INFO 149477 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/thinkpad.home:config-server:8888 with status UP (replication=true)
+2026-08-25T02:01:36.228+01:00  INFO 149477 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/thinkpad.home:order-service:8082 with status UP (replication=false)
+2026-08-25T02:01:36.745+01:00  INFO 149477 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/thinkpad.home:order-service:8082 with status UP (replication=true)
+2026-08-25T02:01:37.317+01:00  INFO 149477 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/thinkpad.home:customer-service:8081 with status UP (replication=false)
+2026-08-25T02:01:37.833+01:00  INFO 149477 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/thinkpad.home:customer-service:8081 with status UP (replication=true)
+2026-08-25T02:01:38.606+01:00  INFO 149477 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY/thinkpad.home:gateway with status UP (replication=false)
+2026-08-25T02:01:39.118+01:00  INFO 149477 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY/thinkpad.home:gateway with status UP (replication=true)
+2026-08-25T02:01:41.282+01:00  INFO 149477 --- [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2026-08-25T02:01:41.301+01:00  INFO 149477 --- [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-25T02:01:41.303+01:00  INFO 149477 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/thinkpad.home:config-server:8888 with status DOWN (replication=false)
+2026-08-25T02:01:41.303+01:00  INFO 149477 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/thinkpad.home:order-service:8082 with status DOWN (replication=false)
+2026-08-25T02:01:41.303+01:00  INFO 149477 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY/thinkpad.home:gateway with status DOWN (replication=false)
+2026-08-25T02:01:41.303+01:00  INFO 149477 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/thinkpad.home:customer-service:8081 with status DOWN (replication=false)
+2026-08-25T02:01:41.307+01:00  INFO 149477 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-25T02:01:41.310+01:00  INFO 149477 --- [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-08-25T02:01:41.310+01:00  INFO 149477 --- [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-08-25T02:01:41.314+01:00  INFO 149477 --- [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-08-25T02:01:41.314+01:00  INFO 149477 --- [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-08-25T02:01:41.320+01:00  INFO 149477 --- [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-08-25T02:01:41.320+01:00  INFO 149477 --- [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-08-25T02:01:41.311+01:00 ERROR 149477 --- [t-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-4.0.2.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-4.0.2.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-4.0.2.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-4.0.2.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.6.jar:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-08-25T02:01:41.326+01:00  INFO 149477 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-25T02:01:41.326+01:00  INFO 149477 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

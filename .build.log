@@ -1,0 +1,18 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[[1;31mERROR[m] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.bruno10log:cloud-hello-world:1.0.0: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:3.5.4 from/to central (https://repo.maven.apache.org/maven2): /home/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-parent/3.5.4/spring-boot-starter-parent-3.5.4.pom.part.lock (Arquivo ou diretório inexistente) and 'parent.relativePath' points at no local POM @ line 17, column 13
+ @ 
+[[1;31mERROR[m] The build could not read 1 project -> [1m[Help 1][m
+[[1;31mERROR[m]   
+[[1;31mERROR[m]   The project com.bruno10log:cloud-hello-world:1.0.0 (/home/bruno/workspace/cloud-hello-world/pom.xml) has 1 error
+[[1;31mERROR[m]     Non-resolvable parent POM for com.bruno10log:cloud-hello-world:1.0.0: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:3.5.4 from/to central (https://repo.maven.apache.org/maven2): /home/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-parent/3.5.4/spring-boot-starter-parent-3.5.4.pom.part.lock (Arquivo ou diretório inexistente) and 'parent.relativePath' points at no local POM @ line 17, column 13 -> [1m[Help 2][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[[1;31mERROR[m] [1m[Help 2][m http://cwiki.apache.org/confluence/display/MAVEN/UnresolvableModelException
